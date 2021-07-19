@@ -4,13 +4,17 @@ const onViewDetails = () =>{
     console.log("Probando")
 }
 
-const Listado = () => {
+const Listado = ({mes}) => {
+    console.log(mes)
+  
     return (
         <div className="container">
-            <h1>Título</h1>
             <div className="row mx-3">
-                <div className="col-md-4 themed-grid-col">ID</div>
-                <div className="col-md-4 themed-grid-col">Descripción</div>
+                <div className="col-md-4 themed-grid-col">
+                    <div>ID: {mes.id}</div>
+                </div>
+                <div className="col-md-4 themed-grid-col">
+                <div>Descripción: {mes.nombre}</div></div>
                 <div className="col-md-4 themed-grid-col">Ver más
                     <div>
                         <button 

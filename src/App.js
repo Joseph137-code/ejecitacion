@@ -1,10 +1,10 @@
 import './App.css';
-import Listado from './Listado';
+import DiasList from './components/DiasList';
 
 function App() {
   return (
     <div>
-      <Listado/>
+      <DiasList/>
     </div>
   );
 }
