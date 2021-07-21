@@ -1,15 +1,15 @@
 import React from 'react';
 import Listado from '../components/Listado';
-import meses from "../MockData/meses"
+import dias from "../MockData/dias"
 
 const DiasList = () => {
-    console.log(meses)
     return ( 
         <div>
-                    <h1>Meses del año</h1>
-            {meses.map(mes =>(
+            <h1>Días de la Semana</h1>
+            {dias.map(dia =>(
                 <Listado 
-                    mes={mes}
+                    key={"dia" + dia.id}
+                    {...dia}
                 />
             ))}
         </div>
